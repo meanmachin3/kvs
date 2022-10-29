@@ -2,10 +2,14 @@
 name = "kvs"
 version = "0.1.0"
 edition = "2021"
-authors = ["Manish Yadav <hi@manishyadav.dev>"]
+about = "A key-value store implementation"
+author = ["Manish Yadav <hi@manishyadav.dev>"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dev-dependencies]
 assert_cmd = "0.11.0"
 predicates = "1.0.0"
+
+[dependencies]
+clap = { version = "4.0.18", features = ["derive"] }
